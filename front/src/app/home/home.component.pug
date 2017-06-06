@@ -1,0 +1,9 @@
+﻿.col-md-6.col-md-offset-3
+    h1 Hi {{currentUser.firstName}}!
+    p You&apos;re logged in with Angular 2!!
+    h3 All registered users:
+    ul
+        li(*ngfor='let user of users')
+            a((click)='deleteUser(user.id)') Delete
+    p
+        a([routerlink]="['/login']") Logout
