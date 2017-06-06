@@ -1,11 +1,11 @@
-<h1 class="md-sidenav-container">
-    <md-toolbar color="primary">
-        <span>{{title}}</span>
 
-        <!-- This fills the remaining space of the current row -->
-        <span class="example-fill-remaining-space"></span>
-        <a color="accent" md-raised-button routerLink="/" routerLinkActive="active">Home</a>
-        <a color="accent" md-raised-button routerLink="/about" routerLinkActive="active">About</a>
-    </md-toolbar>
-    <router-outlet></router-outlet>
-</h1>
+<md-toolbar color="primary">
+    <span>{{title}}</span>
+
+    <!-- This fills the remaining space of the current row -->
+    <span class="example-fill-remaining-space"></span>
+    <a color="accent" md-raised-button routerLink="/" routerLinkActive="active">Home</a>
+    <a color="accent" md-raised-button routerLink="/login" routerLinkActive="active">Login</a>
+    <a color="accent" md-raised-button routerLink="/register" routerLinkActive="active">Register</a>
+</md-toolbar>
+<router-outlet></router-outlet>

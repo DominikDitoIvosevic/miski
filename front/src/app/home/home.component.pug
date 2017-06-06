@@ -3,7 +3,7 @@
     p You&apos;re logged in with Angular 2!!
     h3 All registered users:
     ul
-        li(*ngfor='let user of users')
+        li(*ngFor='let user of users')
             a((click)='deleteUser(user.id)') Delete
     p
-        a([routerlink]="['/login']") Logout
+        a([routerLink]="['/login']") Logout
