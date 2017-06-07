@@ -20,6 +20,7 @@ import { RegisterComponent } from './register/index';
 
 import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MaterialModuleModule} from './material-module/material-module.module';
+import { PutovanjaComponent } from './putovanja/putovanja.component';
 
 @NgModule({
     imports: [
@@ -35,7 +36,8 @@ import {MaterialModuleModule} from './material-module/material-module.module';
         AlertComponent,
         HomeComponent,
         LoginComponent,
-        RegisterComponent
+        RegisterComponent,
+        PutovanjaComponent
     ],
     providers: [
         AuthGuard,

@@ -1,26 +1,32 @@
-var gulp = require("gulp");
-var browserify = require("browserify");
-var source = require('vinyl-source-stream');
-var tsify = require("tsify");
-var paths = {
-    pages: ['src/*.html']
-};
+const gulp = require('gulp');
+const ts = require('gulp-typescript');
+const JSON_FILES = ['src/*.json', 'src/**/*.json'];
+const connect = require('gulp-connect');
 
-gulp.task("copy-html", function() {
-    return gulp.src(paths.pages)
-        .pipe(gulp.dest("dist"));
+// pull in the project TypeScript config
+const tsProject = ts.createProject('tsconfig.json');
+
+gulp.task('scripts', () => {
+  const tsResult = tsProject.src()
+  .pipe(tsProject());
+  return tsResult.js.pipe(gulp.dest('dist'));
 });
 
-gulp.task("default", ["copy-html"], function() {
-    return browserify({
-            basedir: '.',
-            debug: true,
-            entries: ['src/main.ts'],
-            cache: {},
-            packageCache: {}
-        })
-        .plugin(tsify)
-        .bundle()
-        .pipe(source('bundle.js'))
-        .pipe(gulp.dest("dist"));
+gulp.task('watch', ['scripts'], () => {
+  gulp.watch('src/**/*.ts', ['scripts']);
 });
+
+gulp.task('assets', function() {
+  return gulp.src(JSON_FILES)
+  .pipe(gulp.dest('dist'));
+});
+
+gulp.task('connect', function() {
+  connect.server({
+    root: 'dist',
+    livereload: true,
+    port: 8888
+  });
+});
+
+gulp.task('default', ['watch']);
