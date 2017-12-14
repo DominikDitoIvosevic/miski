@@ -1,0 +1,2 @@
+mvn package
+java --add-modules java.se.ee -jar .\target\gs-spring-boot-0.1.0.jar
