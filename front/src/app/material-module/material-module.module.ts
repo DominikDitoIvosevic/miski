@@ -1,7 +1,7 @@
 import { NgModule } from '@angular/core';
 import { CommonModule } from '@angular/common';
 import {
-  MdButtonModule, 
+  MdButtonModule,
   MdCheckboxModule,
   MdCoreModule,
   MdCardModule,
@@ -24,7 +24,6 @@ import {
   MdTooltipModule,
   MdGridListModule,
   MdSnackBarModule,
-  MdSelectionModule,
   MdDatepickerModule,
   MdNativeDateModule,
   MdProgressBarModule,
@@ -35,8 +34,8 @@ import {
 } from '@angular/material';
 
 @NgModule({
-  imports: [  
-    MdButtonModule, 
+  imports: [
+    MdButtonModule,
     MdCheckboxModule,
     MdCoreModule,
     MdCardModule,
@@ -59,7 +58,6 @@ import {
     MdTooltipModule,
     MdGridListModule,
     MdSnackBarModule,
-    MdSelectionModule,
     MdDatepickerModule,
     MdNativeDateModule,
     MdProgressBarModule,
@@ -69,7 +67,7 @@ import {
     MdProgressSpinnerModule
 ],
   exports: [
-    MdButtonModule, 
+    MdButtonModule,
     MdCheckboxModule,
     MdCoreModule,
     MdCardModule,
@@ -92,7 +90,6 @@ import {
     MdTooltipModule,
     MdGridListModule,
     MdSnackBarModule,
-    MdSelectionModule,
     MdDatepickerModule,
     MdNativeDateModule,
     MdProgressBarModule,
