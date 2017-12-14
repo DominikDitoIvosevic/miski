@@ -1,0 +1,10 @@
+com\sqlite\models\LoginModel.class
+com\sqlite\models\UserLoginModel.class
+com\sqlite\service\impl\UserService.class
+com\sqlite\config\DBInitializeConfig.class
+com\sqlite\service\IUserService.class
+com\sqlite\dao\UserLoginDao.class
+com\sqlite\config\SQLiteDialect.class
+com\sqlite\entities\UserLogin.class
+com\sqlite\SampleSqliteApplication.class
+com\sqlite\config\DBConfig.class
