@@ -46,8 +46,8 @@ import { PutovanjaComponent } from './putovanja/putovanja.component';
         UserService,
 
         // providers used to create fake backend
-        fakeBackendProvider,
-        MockBackend,
+        // fakeBackendProvider,
+        // MockBackend,
         BaseRequestOptions
     ],
     bootstrap: [AppComponent]
