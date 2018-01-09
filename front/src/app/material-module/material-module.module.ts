@@ -3,7 +3,7 @@ import { CommonModule } from '@angular/common';
 import {
   MdButtonModule,
   MdCheckboxModule,
-  MdCoreModule,
+  // MdCoreModule,
   MdCardModule,
   MdIconModule,
   MdLineModule,
@@ -37,7 +37,7 @@ import {
   imports: [
     MdButtonModule,
     MdCheckboxModule,
-    MdCoreModule,
+    // MdCoreModule,
     MdCardModule,
     MdIconModule,
     MdLineModule,
@@ -69,7 +69,7 @@ import {
   exports: [
     MdButtonModule,
     MdCheckboxModule,
-    MdCoreModule,
+    // MdCoreModule,
     MdCardModule,
     MdIconModule,
     MdLineModule,

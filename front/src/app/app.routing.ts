@@ -7,10 +7,10 @@ import { AuthGuard } from './_guards/index';
 import { PutovanjaComponent } from './putovanja/index';
 
 const appRoutes: Routes = [
-    { path: '', component: HomeComponent, canActivate: [AuthGuard] },
-    { path: 'login', component: LoginComponent },
-    { path: 'register', component: RegisterComponent },
-    { path: 'putovanja', component: PutovanjaComponent },
+    { path: '', component: HomeComponent }, //, canActivate: [AuthGuard] },
+    // { path: 'login', component: LoginComponent },
+    // { path: 'register', component: RegisterComponent },
+    // { path: 'putovanja', component: PutovanjaComponent },
 
     // otherwise redirect to home
     { path: '**', redirectTo: '' }

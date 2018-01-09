@@ -1,0 +1,10 @@
+http://kzrpms.xyz/
+sudo python3 -m http.server 80
+http://159.89.111.80/
+http://nodesource.com/blog/running-your-node-js-app-with-systemd-part-1/
+https://angular.io/guide/deployment
+https://www.digitalocean.com/community/tutorials/initial-server-setup-with-ubuntu-16-04
+https://docs.spring.io/spring-boot/docs/current/reference/html/deployment-install.html
+https://cloud.digitalocean.com/droplets?i=00f2e2
+https://www.name.com/account/domain/details/kzrpms.xyz#dns
+http://www.akademija-rr.hr/index.php
