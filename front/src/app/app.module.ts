@@ -22,14 +22,14 @@ import { AboutComponent } from './about/about.component'
 import { NavbarComponent } from './navbar/navbar.component'
 import { ContentComponent } from './content/content.component'
 
-import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
+// import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MaterialModuleModule} from './material-module/material-module.module';
 import { PutovanjaComponent } from './putovanja/putovanja.component';
 
 @NgModule({
     imports: [
         BrowserModule,
-        BrowserAnimationsModule,
+        // BrowserAnimationsModule,
         MaterialModuleModule,
         FormsModule,
         HttpModule,

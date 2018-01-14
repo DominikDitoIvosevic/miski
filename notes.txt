@@ -8,3 +8,5 @@ https://docs.spring.io/spring-boot/docs/current/reference/html/deployment-instal
 https://cloud.digitalocean.com/droplets?i=00f2e2
 https://www.name.com/account/domain/details/kzrpms.xyz#dns
 http://www.akademija-rr.hr/index.php
+https://www.freedesktop.org/software/systemd/man/systemd.service.html
+https://jimdoescode.github.io/2017/08/03/simple-per-user-systemd.html

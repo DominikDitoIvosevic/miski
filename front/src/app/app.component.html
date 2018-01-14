@@ -1,14 +1,13 @@
-
-<md-toolbar color="primary">
+<mat-toolbar color="primary">
     <span>{{title}}</span>
 
     <!-- This fills the remaining space of the current row -->
     <span class="example-fill-remaining-space"></span>
-    <a color="accent" md-raised-button routerLink="/" routerLinkActive="active">Home</a>
-    <a color="accent" md-raised-button routerLink="/login" routerLinkActive="active">Login</a>
-    <a color="accent" md-raised-button routerLink="/register" routerLinkActive="active">Register</a>
-    <a color="accent" md-raised-button routerLink="/putovanja" routerLinkActive="active">Putovanja</a>
-</md-toolbar>
-<md-card>
+    <a color="accent" mat-raised-button routerLink="/" routerLinkActive="active">Home</a>
+    <a color="accent" mat-raised-button routerLink="/login" routerLinkActive="active">Login</a>
+    <a color="accent" mat-raised-button routerLink="/register" routerLinkActive="active">Register</a>
+    <a color="accent" mat-raised-button routerLink="/putovanja" routerLinkActive="active">Putovanja</a>
+</mat-toolbar>
+<mat-card>
     <router-outlet></router-outlet>
-</md-card>
+</mat-card>
