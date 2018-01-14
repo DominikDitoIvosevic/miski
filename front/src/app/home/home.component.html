@@ -1,9 +1,19 @@
-<div class="col-mat-6 col-mat-offset-3">
-    <h1>Hi {{currentUser.firstName}}!</h1>
-    <p>You&apos;re logged in with Angular 2!!</p>
-    <h3>All registered users:</h3>
-    <ul>
-        <li *ngFor="let user of users"><a (click)="deleteUser(user.id)">Delete</a></li>
-    </ul>
-    <p><a color="accent" mat-raised-button [routerLink]="['/login']">Logout</a></p>
+<div class='post'>
+    <mat-list>
+        <mat-list-item *ngFor="let post of posts" class='post'>
+            <mat-card class='post-card'>
+                <mat-card-title>{{post.title}}</mat-card-title>
+                <mat-card-subtitle>{{post.date}}</mat-card-subtitle>
+                <mat-card-content>
+                    <mat-list>
+                        <mat-list-item class='post-line' *ngFor="let line of post.lines">
+                            <p>
+                                {{line}}
+                            </p>
+                        </mat-list-item>
+                    </mat-list>
+                </mat-card-content>
+            </mat-card>
+        </mat-list-item>
+    </mat-list>
 </div>

@@ -1,13 +1,15 @@
-<mat-toolbar color="primary">
-    <span>{{title}}</span>
+<div class='my-app'>
+    <mat-toolbar color="primary" class='navbar'>
+        <a class='title' color='primary' routerLinkActive='active' routerLink='/' mat-raised-button>{{title}}</a>
 
-    <!-- This fills the remaining space of the current row -->
-    <span class="example-fill-remaining-space"></span>
-    <a color="accent" mat-raised-button routerLink="/" routerLinkActive="active">Home</a>
-    <a color="accent" mat-raised-button routerLink="/login" routerLinkActive="active">Login</a>
-    <a color="accent" mat-raised-button routerLink="/register" routerLinkActive="active">Register</a>
-    <a color="accent" mat-raised-button routerLink="/putovanja" routerLinkActive="active">Putovanja</a>
-</mat-toolbar>
-<mat-card>
-    <router-outlet></router-outlet>
-</mat-card>
+        <div class='navigation'>
+            <a color="accent" mat-raised-button routerLink="/" routerLinkActive="active">Naslovnica</a>
+            <a color="accent" mat-raised-button routerLink="/courses" routerLinkActive="active">Edukacija</a>
+            <a color="accent" mat-raised-button routerLink="/about" routerLinkActive="active">O kabinetu</a>
+            <a color="accent" mat-raised-button routerLink="/members" routerLinkActive="active">Članovi</a>
+        </div>
+    </mat-toolbar>
+    <mat-card class='my-component'>
+        <router-outlet></router-outlet>
+    </mat-card>
+</div>

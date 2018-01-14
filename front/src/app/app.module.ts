@@ -16,15 +16,14 @@ import { AlertComponent } from './_directives/index';
 import { AuthGuard } from './_guards/index';
 import { AlertService, AuthenticationService, UserService } from './_services/index';
 import { HomeComponent } from './home/index';
-import { LoginComponent } from './login/index';
+import { CoursesComponent } from './courses/index';
 import { RegisterComponent } from './register/index';
 import { AboutComponent } from './about/about.component'
-import { NavbarComponent } from './navbar/navbar.component'
 import { ContentComponent } from './content/content.component'
+import { MembersComponent } from './members/members.component'
 
 // import {BrowserAnimationsModule} from '@angular/platform-browser/animations';
 import {MaterialModuleModule} from './material-module/material-module.module';
-import { PutovanjaComponent } from './putovanja/putovanja.component';
 
 @NgModule({
     imports: [
@@ -39,11 +38,10 @@ import { PutovanjaComponent } from './putovanja/putovanja.component';
         AppComponent,
         AlertComponent,
         HomeComponent,
-        LoginComponent,
+        MembersComponent,
         RegisterComponent,
-        PutovanjaComponent,
+        CoursesComponent,
         AboutComponent,
-        NavbarComponent,
         ContentComponent
     ],
     providers: [

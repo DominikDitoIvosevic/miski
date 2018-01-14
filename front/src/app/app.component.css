@@ -1,8 +1,24 @@
+.navbar {
+    display: flex;
+    justify-content: space-around;
+}
 
-.example-fill-remaining-space {
-  flex: 1 1 auto;
+.title {
+    font-size: 22px;
 }
 
 body {
-  margin: 0;
+    margin: 1;
+    height: 2000px;
+}
+
+.my-component {
+    width: 60%;
+}
+
+.my-app {
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
 }

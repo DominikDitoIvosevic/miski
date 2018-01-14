@@ -1,0 +1,14 @@
+.courses {
+    display: flex;
+    justify-content: center;
+}
+
+.course {
+    height: auto !important;
+    width: 70%;
+    margin: 20px;
+}
+
+.course-card {
+    width: 100%;
+}

@@ -1,0 +1,18 @@
+.posts {
+    display: flex;
+    justify-content: center;
+}
+
+.post {
+    height: auto !important;
+    width: 70%;
+    margin: 20px;
+}
+
+.post-card {
+    width: 100%;
+}
+
+.post-line {
+    height: auto !important;
+}

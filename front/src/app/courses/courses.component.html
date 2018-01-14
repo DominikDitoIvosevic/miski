@@ -1,0 +1,15 @@
+<div class='courses'>
+    <mat-list>
+        <mat-list-item *ngFor="let course of courses" class='course'>
+            <mat-card class='course-card'>
+                <mat-card-title>{{course.title}}</mat-card-title>
+                <mat-card-subtitle>{{course.date}}</mat-card-subtitle>
+                <mat-card-content>
+                    <mat-list>
+                        <mat-list-item *ngFor="let line of course.lines">{{line}}</mat-list-item>
+                    </mat-list>
+                </mat-card-content>
+            </mat-card>
+        </mat-list-item>
+    </mat-list>
+</div>
